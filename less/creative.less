@@ -122,7 +122,7 @@ aside {
         background-color: transparent;
         border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
-            color: fade(white, 70%);
+            color: fade(white, 80%);
             &:hover,
             &:focus {
                 color: white;
@@ -139,7 +139,7 @@ aside {
             background-color: white;
             border-color: fade(@gray-darker, 5%);
             .navbar-header .navbar-brand {
-                color: @theme-primary;
+                color: @gray-dark;
                 font-size: 14px;
                 &:hover,
                 &:focus {
@@ -165,7 +165,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/officc.png');
     text-align: center;
     color: white;
     .header-content {
@@ -220,22 +220,61 @@ header {
 }
 
 // Sections
+.box-g{
+  background-color:#ACCB2A;
+  padding: 4px;
+}
+.box-dg{
+  background-color:#70B737;
+  padding: 4px;
+}
+.box-ddg{
+  background-color:#579E13;
+  padding: 4px;
+}
 
+.box-top{
+  padding: 20px 10px;
+  margin: 0px;
+}
+.box{
+  background-color:#F2F2F2;
+  padding: 15px 30px 15px 30px;
+  margin: 0px;
+}
 .section-heading {
     margin-top: 0;
 }
-
+.love-box
+{
+margin: 20px auto 0;
+max-width: 400px;
+padding: 10px;
+}
 .service-box {
-    max-width: 400px;
+    max-width: 300px;
     margin: 50px auto 0;
+    border: 1px #E2E2E2 solid;
     @media (min-width: 992px) {
-        margin: 20px auto 0;
+        margin: 50px auto 0;
     }
     p {
         margin-bottom: 0;
     }
+    &:hover
+    {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transform:translateY(-5px);
+        blur:2px;
+    }
 }
 
+.text-muted
+{
+line-height: 24px;
+padding-bottom: 10px;
+
+}
 .portfolio-box {
     position: relative;
     display: block;
@@ -245,7 +284,7 @@ header {
         color: white;
         opacity: 0;
         display: block;
-        background: fade(@theme-primary, 90%);
+        background: fade(@theme-primary2, 90%);
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -303,7 +342,7 @@ header {
 
 // Bootstrap Overrides
 .text-primary {
-    color: @theme-primary;
+    color: #fff;
 }
 
 .no-gutter > [class*='col-'] {
@@ -312,6 +351,22 @@ header {
 }
 
 // Button Styles
+.btn-work {
+  color: #70B737;
+  background-color: #fff;
+  border-color: #70B737;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  border:1px solid #E5E5E5;
+}
+.btn-work:hover
+{
+  background-color: #70B737;
+  color: white;
+
+}
+
 .btn-default {
     .button-variant(@gray-darker;white;white);
 }
