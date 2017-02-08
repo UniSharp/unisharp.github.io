@@ -51,7 +51,7 @@ p {
 }
 
 .bg-dark {
-    background-color: @gray-darker;
+    background-color: #3D4350;
     color: white;
 }
 
@@ -82,12 +82,16 @@ aside {
         color: @gray;
         .sans-serif-font;
         font-weight: 700;
-        text-transform: uppercase;
         &:hover,
         &:focus {
             color: @gray;
         }
     }
+
+    img{
+        width: 25px;
+    }
+
     .navbar-header .navbar-toggle {
         font-weight: 700;
         font-size: 12px;
@@ -165,7 +169,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/officc.png');
+    background-image: url('../img/bg.png');
     text-align: center;
     color: white;
     .header-content {
@@ -173,6 +177,7 @@ header {
         text-align: center;
         padding: 100px 15px 100px;
         width: 100%;
+        text-shadow:2px 2px 2px @gray-light;
         .header-content-inner {
             h1 {
                 font-weight: 700;
@@ -201,6 +206,8 @@ header {
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             padding: 0 50px;
+            word-spacing:2rem;
+            line-height:5rem;
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
@@ -221,7 +228,7 @@ header {
 
 // Sections
 .box-g{
-  background-color:#8cc55e;
+  background-color:@theme-primary;
   padding: 4px;
 }
 .box-dg{
@@ -266,6 +273,7 @@ padding: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform:translateY(-5px);
         blur:2px;
+        transition:all 0.5s;
     }
 }
 
@@ -284,7 +292,7 @@ padding-bottom: 10px;
         color: white;
         opacity: 0;
         display: block;
-        background: fade(@theme-primary2, 90%);
+        background: fade(@theme-primary3, 90%);
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -352,7 +360,7 @@ padding-bottom: 10px;
 
 // Button Styles
 .btn-work {
-  color: #70B737;
+  color: @theme-primary;
   background-color: #fff;
   border-color: #70B737;
   -webkit-transition: all 0.35s;
@@ -362,7 +370,7 @@ padding-bottom: 10px;
 }
 .btn-work:hover
 {
-  background-color: #70B737;
+  background-color: @theme-primary;
   color: white;
 
 }
