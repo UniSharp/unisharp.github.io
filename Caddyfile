@@ -1,0 +1,4 @@
+localhost:8000 {
+    tls off
+    root ./
+}
